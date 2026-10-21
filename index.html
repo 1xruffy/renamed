@@ -180,12 +180,48 @@ footer{margin-top:90px;padding-top:22px;border-top:1px solid var(--b);color:var(
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}h1 span,.c,.sub,.ord{opacity:1!important;transform:none!important}h2::after{transform:scaleX(.18)}}
 
 /* ---------- admin panel ---------- */
-.atabs{display:flex;gap:6px;flex-wrap:wrap;margin:14px 0}.atabs .gb{padding:8px 14px;text-transform:capitalize}.atabs .on{background:#fff;color:#000}
-.ai{width:100%;background:#000;border:2px solid var(--b);padding:12px;margin:6px 0;font-size:14px;outline:0}.ai:focus{border-color:#fff}
-.ar2{display:flex;justify-content:space-between;gap:10px;border:1px solid var(--b);padding:10px 12px;margin:8px 0;flex-wrap:wrap;align-items:center}
-.ab{display:flex;gap:6px;flex-wrap:wrap}.ab button,.ab2 button{padding:7px 12px;font-size:12px}.row{display:flex;gap:8px}.row>*{flex:1;min-width:0}
-#am small{color:var(--m)}#am h4{margin:18px 0 6px;font-size:15px}#am .go{margin-top:6px}
 #ann{background:#fff;color:#000;padding:10px 16px;font-weight:600;text-align:center;margin-bottom:16px}
+.ai{width:100%;background:#000;border:2px solid var(--b);padding:12px;margin:6px 0;font-size:14px;outline:0}.ai:focus{border-color:#fff}
+.row{display:flex;gap:8px}.row>*{flex:1;min-width:0}
+.ab{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.ab button{padding:8px 12px;font-size:12px}
+#am{padding:0;overflow:hidden}
+#am .x{z-index:5;top:12px;right:14px}
+.adm{display:grid;grid-template-columns:210px 1fr;height:min(84vh,780px)}
+.as{background:#080808;border-right:2px solid var(--b);padding:20px 12px;display:flex;flex-direction:column;gap:4px;overflow-y:auto}
+.at{font-weight:800;font-size:22px;letter-spacing:-.04em;padding:0 10px 16px}
+.as button{display:flex;gap:12px;align-items:center;background:none;border:0;padding:11px 12px;text-align:left;cursor:pointer;font-weight:600;font-size:14px;color:var(--m);transition:color .2s,background .2s,padding .25s var(--e)}
+.as button:hover{color:#fff;background:#141414;padding-left:16px}.as button.on{color:#000;background:#fff;padding-left:12px}
+.as button i{font-style:normal;width:18px;text-align:center}
+.ac{padding:28px 30px 36px;overflow-y:auto}
+.ac h3{font-size:30px;letter-spacing:-.04em;margin:0 0 4px}
+.lead{color:var(--m);font-size:14px;margin-bottom:20px}
+#am h4{margin:24px 0 8px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--m);display:flex;gap:8px;align-items:center}
+#am small{color:var(--m);font-size:12px}
+#am .go{margin-top:6px}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-bottom:18px}
+.sc{border:2px solid var(--b);background:var(--p);padding:14px 16px}.sc b{display:block;font-size:26px;letter-spacing:-.03em;margin-bottom:2px}.sc small{display:block}
+.warn{border:2px solid #ffb020;background:rgba(255,176,32,.08);padding:14px 16px;font-size:14px;line-height:1.5;display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.tb{display:flex;gap:8px;margin-bottom:10px}.tb .ai{margin:0}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}.chips .gb{padding:7px 14px;font-size:12px;text-transform:capitalize}.chips .on{background:#fff;color:#000}
+.ar2{display:flex;justify-content:space-between;gap:10px;border:1px solid var(--b);background:var(--p);padding:11px 14px;margin:8px 0;flex-wrap:wrap;align-items:center}
+.ur{border:1px solid var(--b);background:var(--p);margin-bottom:8px;transition:border-color .2s}.ur.open,.ur:hover{border-color:#666}
+.uh{display:flex;align-items:center;gap:12px;padding:11px 14px;cursor:pointer}
+.ui{flex:1;min-width:0}.ui b{font-size:15px}.ui small{display:block;margin-top:2px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ux{border-top:1px solid var(--b);padding:14px;display:flex;flex-direction:column;gap:10px;background:#080808}
+.ux .row .ai{margin:0}.ux .row .gb{flex:0 0 auto}
+.tg{border:1px solid var(--b);padding:2px 8px;font-size:11px;font-weight:700;color:var(--m)}.tg.bad{color:var(--bad);border-color:var(--bad)}.tg.ok{color:var(--ok);border-color:var(--ok)}
+.gb.dg:hover{border-color:var(--bad);color:var(--bad)}
+.pi{width:96px;margin:0}
+details{border:1px solid var(--b);padding:12px 14px;margin:10px 0;background:var(--p)}details summary{cursor:pointer;font-weight:600;font-size:14px}
+details ol{margin:10px 0 10px 18px}details pre.addr{white-space:pre-wrap;margin:8px 0}
+code{background:#000;border:1px solid var(--b);padding:1px 6px;font-size:12px}
+@media(max-width:700px){
+ .adm{grid-template-columns:1fr;grid-template-rows:auto 1fr;height:90vh}
+ .as{flex-direction:row;overflow-x:auto;overflow-y:hidden;border-right:0;border-bottom:2px solid var(--b);padding:10px 48px 10px 10px}
+ .at{display:none}.as button{white-space:nowrap;padding:9px 12px}.as button:hover,.as button.on{padding-left:12px}
+ .ac{padding:20px 16px 30px}.two{grid-template-columns:1fr}.row{flex-wrap:wrap}
+}
 </style>
 </head>
 <body>
@@ -210,7 +246,7 @@ footer{margin-top:90px;padding-top:22px;border-top:1px solid var(--b);color:var(
 </div>
 <div class="ov" id="ov"><div class="md" id="md"></div></div>
 <div class="ov" id="sov"><div class="sp"><div class="si"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8a8a8a" stroke-width="2.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg><input id="sq" placeholder="Search usernames" autocomplete="off"><kbd>esc</kbd></div><div id="sr"></div></div></div>
-<div class="ov" id="aov"><div class="md" id="am" style="max-width:720px"></div></div>
+<div class="ov" id="aov"><div class="md" id="am" style="max-width:1020px"></div></div>
 <div id="toast"></div>
 <div id="mail"></div>
 
@@ -243,12 +279,15 @@ const CONFIG={
   /* BADGES by username (not case sensitive). Available: Buyer, Owner, Developer, Noticeable, Admin (+ any you create in the panel).
      "Buyer" is also given automatically to anyone with an order (autoBuyerBadge). */
   badgeUsers:{
-    "renamed":["Buyer","Owner","Developer","Noticeable"],
+    "1.owa":["Buyer","Owner","Developer","Noticeable"],
     // "someusername":["Developer"],
   },
   autoBuyerBadge:true,
   /* Optional lock so nobody else can claim a badge username: "name":"your@email.com" = only that email may use it. */
   lockedUsernames:{"1.owa":"un5forme@gmail.com"},
+  /* SHARED STORAGE (optional): paste a free Supabase project URL + anon key so search, the user list, bans, badges and
+     product changes are shared between everyone instead of living in one browser. Setup steps are in Admin > Site. */
+  cloud:{url:"",key:""},
 };
 const BADGE_DEFS={
   Buyer:{g:"$",c:"#4ade80",d:"Has bought from the store"},
@@ -276,6 +315,7 @@ const money=n=>CONFIG.currency+(Math.round(n*100)/100).toFixed(2);
 const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches,sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const CATS=SECTIONS.flatMap(s=>s.cats);
 CATS.forEach(c=>c.products=(c.products||[]).map(p=>({...p,id:p.name,full:c.name.split(" ")[0].toLowerCase()+" ┃ "+p.name,price:p.price??c.price??5,sold:/^(sold|bought)$/i.test(p.status||"")})));
+CATS.forEach(c=>c.products.forEach(p=>{p.sold0=p.sold;p.price0=p.price}));
 
 /* ---------- ui helpers ---------- */
 let tt;const toast=m=>{const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("on"),2400)};
@@ -369,7 +409,7 @@ function gate(){
     requestAnimationFrame(draw);
   })();
 }
-function afterGate(){me()?enterSite():showAuth("signup")}
+function afterGate(){const go=()=>me()?enterSite():showAuth("signup");CL()?Promise.race([Promise.all([pullSettings(),loadDir()]),sleep(2500)]).then(go,go):go()}
 
 /* ---------- 2) sign up / log in / confirm email ---------- */
 const fld=(id,label,type="text",extra="")=>`<div class="fld"><input id="${id}" type="${type}" placeholder=" " autocomplete="off" ${extra}><label for="${id}">${label}</label>${type==="password"?`<button type="button" class="eye" data-e="${id}">SHOW</button>`:""}</div>`;
@@ -399,6 +439,7 @@ function showAuth(mode){
         if(p!==$("#pw2").value)return fail("Passwords don't match.");
         if(locked(un,em))return fail("That username is reserved.");
         const old=U.find(x=>x.email===em||x.username.toLowerCase()===un.toLowerCase());
+        if(!old&&DIR.some(d=>String(d.username).toLowerCase()===un.toLowerCase()))return fail("That username is taken.");
         if(old&&old.verified)return fail(old.email===em?"That email already has an account. Log in instead.":"That username is taken.");
         const salt=rnd(),user={email:em,username:un,salt,hash:await hashPw(p,salt),verified:false,created:Date.now(),orders:[]};
         saveUsers(U.filter(x=>x!==old).concat(user));await sendCode(user);showVerify(user);
@@ -432,7 +473,7 @@ function showVerify(u){
     const bad=m=>{$("#er").textContent=m;otp.classList.remove("bad");void otp.offsetWidth;otp.classList.add("bad");setTimeout(()=>{otp.classList.remove("bad");ins.forEach(i=>{i.value="";i.classList.remove("f")});ins[0].focus()},600)};
     if(!pending||pending.username!==u.username||Date.now()>pending.exp)return bad("That code expired. Request a new one.");
     if(val()!==pending.code)return bad("Wrong code. Check the email and try again.");
-    clearInterval(timer);otp.classList.add("good");const U=users(),x=U.find(y=>y.username===u.username);x.verified=true;saveUsers(U);pending=null;notifyWebhook(x);
+    clearInterval(timer);otp.classList.add("good");const U=users(),x=U.find(y=>y.username===u.username);x.verified=true;saveUsers(U);pending=null;notifyWebhook(x);pushProfile(x);
     localStorage.setItem("cle_session",u.username);$("#mail").classList.remove("on");await sleep(700);enterSite(true)}
   $("#go").onclick=chk;
 }
@@ -489,9 +530,9 @@ const pill=(b,n)=>{const d=BADGE_DEFS[b];return`<span class="bg" style="--c:${d.
 const mini=b=>{const d=BADGE_DEFS[b];return`<s class="mb1" style="--c:${d.c}" title="${b}">${esc(d.g)}</s>`};
 
 function profile(a,name){
-  const U=users().find(x=>x.verified&&x.username.toLowerCase()===String(name).toLowerCase()),m=me();
+  const U=everyone().find(x=>x.username.toLowerCase()===String(name).toLowerCase()),m=me();
   if(!U){a.innerHTML=`<section class="view"><button class="back" id="pbk">Back</button><h1 class="s">User not found</h1><p class="sub" style="animation-delay:.1s">No account has that username.</p></section>`;$("#pbk").onclick=()=>go("home");return}
-  const mine=m&&m.username===U.username,o=[...(U.orders||[])].reverse(),spent=o.reduce((t,x)=>t+x.total,0),priv=U.showOrders===false,see=mine||!priv,bs=badgesOf(U);
+  const mine=m&&m.username===U.username,o=[...(U.orders||[])].reverse(),spent=o.reduce((t,x)=>t+x.total,0),priv=U.showOrders===false||!!U.remote,see=mine||!priv,bs=badgesOf(U);
   a.innerHTML=`<section class="view"><button class="back" id="pbk">Back</button>
    <div class="ph"><div class="pav">${esc(U.username[0].toUpperCase())}</div>
     <div class="pm"><div class="nr"><h1 class="s" style="margin:0">${esc(U.username)}</h1><div class="bgs">${bs.map(pill).join("")}</div></div></div>
@@ -520,17 +561,17 @@ function editProfile(U){
     if(locked(nn,x.email))return er("That username is reserved.");
     $("#ngo").classList.add("ld");
     if(await hashPw($("#npw").value,x.salt)!==x.hash){$("#ngo").classList.remove("ld");return er("Wrong password.")}
-    x.username=nn;saveUsers(all);localStorage.setItem("cle_session",nn);close();header();toast("Username changed to "+nn);st.v="account";render();
+    x.username=nn;saveUsers(all);cDel(U.username);pushProfile(x);localStorage.setItem("cle_session",nn);close();header();toast("Username changed to "+nn);st.v="account";render();
   };
   $("#ngo").onclick=save;md.querySelectorAll("input").forEach(i=>i.onkeydown=e=>{if(e.key==="Enter")save()});
 }
 function openUser(n){closeSearch();st.u=n;go("user")}
 
 /* ---------- search ---------- */
-function openSearch(){$("#sov").classList.add("open");const q=$("#sq");q.value="";sres();setTimeout(()=>q.focus(),40)}
+function openSearch(){$("#sov").classList.add("open");const q=$("#sq");q.value="";sres();loadDir().then(()=>$("#sov").classList.contains("open")&&sres());setTimeout(()=>q.focus(),40)}
 function closeSearch(){$("#sov").classList.remove("open")}
 function sres(){
-  const q=$("#sq").value.trim().toLowerCase();let l=users().filter(u=>u.verified);
+  const q=$("#sq").value.trim().toLowerCase();let l=everyone();
   l=q?l.filter(u=>u.username.toLowerCase().includes(q)).sort((x,y)=>(y.username.toLowerCase().startsWith(q))-(x.username.toLowerCase().startsWith(q))):l.sort((x,y)=>y.created-x.created);
   l=l.slice(0,8);
   $("#sr").innerHTML=l.length?(q?"":'<div class="sl">Newest accounts</div>')+l.map((u,i)=>`<div class="rw ${i?"":"act"}" data-u="${esc(u.username)}" style="--n:${i}"><i class="av">${esc(u.username[0].toUpperCase())}</i><span class="nm">${esc(u.username)}</span><span class="mb">${badgesOf(u).map(mini).join("")}</span><span class="ar">→</span></div>`).join(""):`<div class="sl">No usernames match “${esc(q)}”.</div>`;
@@ -576,13 +617,39 @@ $("#sq").onkeydown=e=>{const r=[...$("#sr").querySelectorAll(".rw")];if(!r.lengt
   if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();r[i]?.classList.remove("act");i=(i+(e.key==="ArrowDown"?1:-1)+r.length)%r.length;r[i].classList.add("act");r[i].scrollIntoView({block:"nearest"})}
   if(e.key==="Enter"&&r[i])openUser(r[i].dataset.u)};
 
+/* ================= CLOUD (optional shared storage) ================= */
+const CL=()=>!!(CONFIG.cloud&&CONFIG.cloud.url&&CONFIG.cloud.key);
+async function cReq(path,opt={}){
+  const r=await fetch(CONFIG.cloud.url.replace(/\/$/,"")+"/rest/v1/"+path,{...opt,headers:{apikey:CONFIG.cloud.key,Authorization:"Bearer "+CONFIG.cloud.key,"Content-Type":"application/json",...(opt.headers||{})}});
+  if(!r.ok)throw new Error("Cloud error "+r.status);const t=await r.text();return t?JSON.parse(t):null}
+let DIR=[];
+async function loadDir(){if(!CL())return;try{DIR=(await cReq("profiles?select=username,created&order=created.desc&limit=1000"))||[]}catch(e){}}
+async function pushProfile(u){if(!CL()||!u||!u.verified)return;try{await cReq("profiles?on_conflict=username_lc",{method:"POST",headers:{Prefer:"resolution=merge-duplicates,return=minimal"},body:JSON.stringify({username_lc:u.username.toLowerCase(),username:u.username,created:u.created})})}catch(e){}}
+async function cDel(n){if(!CL())return;try{await cReq("profiles?username_lc=eq."+encodeURIComponent(String(n).toLowerCase()),{method:"DELETE"})}catch(e){}}
+async function pullSettings(){
+  if(!CL())return;
+  try{const r=await cReq("site?id=eq.settings&select=data");
+    if(r&&r[0]&&r[0].data){localStorage.setItem(AK,JSON.stringify(r[0].data));Object.assign(BADGE_DEFS,adm().defs);applyProd(adm())}
+    else if(localStorage.getItem(AK))pushSettings(adm())}catch(e){}}
+async function pushSettings(d){if(!CL())return;try{await cReq("site?on_conflict=id",{method:"POST",headers:{Prefer:"resolution=merge-duplicates,return=minimal"},body:JSON.stringify({id:"settings",data:d})})}catch(e){toast("Cloud sync failed")}}
+const SQL=`create table profiles(username_lc text primary key, username text not null, created bigint);
+create table site(id text primary key, data jsonb);
+alter table profiles enable row level security;
+alter table site enable row level security;
+create policy "open" on profiles for all using (true) with check (true);
+create policy "open" on site for all using (true) with check (true);`;
+const everyone=()=>{const L=users().filter(u=>u.verified),s=new Set(L.map(u=>u.username.toLowerCase()));
+  return L.concat(DIR.filter(d=>!s.has(String(d.username).toLowerCase())).map(d=>({username:d.username,created:+d.created||0,email:"",verified:true,orders:[],remote:true})))};
+
 /* ================= ADMIN PANEL ================= */
 const low=s=>String(s).toLowerCase(),AK="cle_admin";
-const adm0=()=>({badges:{},banned:{},blacklist:[],admins:[],defs:{},announce:"",noSignup:false});
+const adm0=()=>({badges:{},banned:{},blacklist:[],admins:[],defs:{},announce:"",noSignup:false,prod:{},log:[]});
 function adm(){try{return Object.assign(adm0(),JSON.parse(localStorage.getItem(AK)||"{}"))}catch(e){return adm0()}}
-const admSave=d=>localStorage.setItem(AK,JSON.stringify(d));
+function admSave(d){localStorage.setItem(AK,JSON.stringify(d));pushSettings(d)}
 function isAdmin(u){return !!u&&[...CONFIG.admins,...adm().admins].some(a=>low(a)===low(u.email))}
 Object.assign(BADGE_DEFS,adm().defs);
+function applyProd(d){const o=(d||adm()).prod||{};CATS.forEach(c=>c.products.forEach(p=>{const x=o[c.id+":"+p.name]||{};p.sold=x.sold!=null?x.sold:p.sold0;p.price=x.price!=null?x.price:p.price0}))}
+const findProd=key=>{for(const c of CATS)for(const p of c.products)if(c.id+":"+p.name===key)return p};
 function blockedMsg(u){
   if(isAdmin(u))return"";const d=adm(),b=d.banned[low(u.username)]||d.banned[low(u.email)];
   if(b)return"You are banned."+(b.reason?" Reason: "+b.reason:"");
@@ -594,71 +661,148 @@ function adminUI(){
   $("#adm")?.remove();
   let e=$("#ann");const t=adm().announce;
   if(!t){e&&e.remove()}else{if(!e){e=document.createElement("div");e.id="ann";$("#site").prepend(e)}e.textContent=t}
-  if(isAdmin(me())){const b=document.createElement("button");b.id="adm";b.className="gb";b.textContent="⚙ Admin";b.onclick=()=>{$("#aov").classList.add("open");admDraw()};$(".hl").prepend(b)}
+  if(isAdmin(me())){const b=document.createElement("button");b.id="adm";b.className="gb";b.textContent="⚙ Admin";b.onclick=()=>{$("#aov").classList.add("open");loadDir().then(()=>$("#aov").classList.contains("open")&&admDraw());admDraw()};$(".hl").prepend(b)}
 }
 $("#aov").onmousedown=e=>{if(e.target.id==="aov")$("#aov").classList.remove("open")};
-let atab="users",aq="";
+
+const TABS=[["home","Dashboard","▦"],["users","Users","☺"],["orders","Orders","£"],["prod","Products","▤"],["badges","Badges","★"],["mod","Moderation","⛔"],["site","Site","⚙"],["log","Activity","≡"]];
+let atab="home",aq="",afl="all",aoq="",aex="";
+const ago=t=>{if(!t)return"unknown";const s=(Date.now()-t)/1000;return s<60?"just now":s<3600?Math.floor(s/60)+"m ago":s<86400?Math.floor(s/3600)+"h ago":Math.floor(s/86400)+"d ago"};
+const logA=(d,m)=>{d.log=[{t:Date.now(),m,by:me()?me().username:"?"}].concat(d.log||[]).slice(0,80)};
+const isBanned=(d,u)=>d.banned[low(u.username)]||(u.email&&d.banned[low(u.email)]);
+const allOrders=()=>users().flatMap(u=>(u.orders||[]).map(o=>({...o,user:u.username}))).sort((a,b)=>b.date-a.date);
+const allUsers=()=>everyone().concat(users().filter(u=>!u.verified));
+const sc=(v,l)=>`<div class="sc"><b>${v}</b><small>${l}</small></div>`;
 const bOpts=()=>Object.keys(BADGE_DEFS).map(b=>`<option>${esc(b)}</option>`).join("");
-const ulist=()=>{const d=adm(),l=users().filter(u=>!aq||low(u.username).includes(aq)||low(u.email).includes(aq)).slice(0,50);
-  return l.length?l.map(u=>{const k=esc(u.username),b=d.banned[low(u.username)]||d.banned[low(u.email)];
-   return`<div class="ar2"><div><b>${k}</b> ${badgesOf(u).map(mini).join("")}<br><small>${esc(u.email)} · ${u.verified?"verified":"unverified"} · ${(u.orders||[]).length} orders${b?" · <span style='color:var(--bad)'>BANNED</span>":""}</small></div>
-   <div class="ab"><button class="gb" data-a="ren" data-k="${k}">Rename</button><button class="gb" data-a="${b?"unban":"ban"}" data-k="${k}">${b?"Unban":"Ban"}</button><button class="gb" data-a="clr" data-k="${k}">Wipe orders</button><button class="gb" data-a="del" data-k="${k}">Delete</button></div></div>`}).join(""):'<p class="nt">No users found.</p>'};
+const sw=(id,on,txt)=>`<label class="sw"><input type="checkbox" id="${id}" ${on?"checked":""}><i></i><span>${txt}</span></label>`;
+
+function ulist(){
+  const d=adm(),s=low(aq);let l=allUsers().filter(u=>!s||low(u.username).includes(s)||low(u.email||"").includes(s));
+  const F={verified:u=>u.verified,unverified:u=>!u.verified,banned:u=>isBanned(d,u),admins:u=>isAdmin(u),buyers:u=>(u.orders||[]).length};
+  if(F[afl])l=l.filter(F[afl]);l.sort((a,b)=>b.created-a.created);
+  if(!l.length)return'<p class="nt">No users match.</p>';
+  return`<p class="nt">${l.length} user${l.length==1?"":"s"}</p>`+l.slice(0,100).map(u=>{
+    const k=esc(u.username),open=aex===low(u.username),b=isBanned(d,u),loc=!u.remote;
+    return`<div class="ur ${open?"open":""}"><div class="uh" data-a="ex" data-k="${k}"><i class="av">${esc(u.username[0].toUpperCase())}</i>
+     <div class="ui"><div><b>${k}</b> ${badgesOf(u).map(mini).join("")}</div><small>${u.email?esc(u.email)+" · ":""}${u.remote?"cloud only":u.verified?"verified":"unverified"} · ${(u.orders||[]).length} orders · joined ${ago(u.created)}</small></div>
+     ${b?'<span class="tg bad">BANNED</span>':""}<span class="ar">${open?"−":"+"}</span></div>
+     ${open?`<div class="ux"><div class="ab"><button class="gb" data-a="view" data-k="${k}">View profile</button>
+       <button class="gb" data-a="${b?"unban":"ban"}" data-k="${k}">${b?"Unban":"Ban"}</button>
+       ${loc?`<button class="gb" data-a="ren" data-k="${k}">Rename</button><button class="gb" data-a="${u.verified?"unver":"ver"}" data-k="${k}">${u.verified?"Unverify":"Verify"}</button>
+       ${u.email?`<button class="gb" data-a="adm" data-k="${k}">${isAdmin(u)?"Remove admin":"Make admin"}</button>`:""}<button class="gb" data-a="clr" data-k="${k}">Wipe orders</button>`:""}
+       <button class="gb dg" data-a="del" data-k="${k}">${loc?"Delete":"Remove from cloud"}</button></div>
+      <div class="row"><select class="ai" id="ub">${bOpts()}</select><button class="gb" data-a="ubadd" data-k="${k}">Give badge</button></div></div>`:""}</div>`}).join("")}
+const olist=()=>{const s=low(aoq),l=allOrders().filter(o=>!s||low(o.user).includes(s)||low(o.name).includes(s));
+  return l.length?l.slice(0,100).map(o=>`<div class="ar2"><span><b>${esc(o.name)}</b><br><small>${esc(o.user)} · ${esc(o.method)} · ${new Date(o.date).toLocaleString()}</small></span><span class="ab"><b>${money(o.total)}</b><button class="gb dg" data-a="odel" data-k="${esc(o.user)}" data-i="${o.date}">Remove</button></span></div>`).join(""):'<p class="nt">No orders found.</p>'};
+const rrow=u=>`<div class="ar2"><span><b>${esc(u.username)}</b> <small>${ago(u.created)}${u.remote?" · cloud":""}</small></span><button class="gb" data-a="goto" data-k="${esc(u.username)}">Manage</button></div>`;
+
 const AT={
- users:()=>`<input class="ai" id="aq" placeholder="Search username or email" value="${esc(aq)}"><div id="ul">${ulist()}</div>`,
- badges:d=>`<h4>Give / remove a badge</h4><div class="row"><input class="ai" id="bu" placeholder="Username (works even before they sign up)"><select class="ai" id="bs">${bOpts()}</select></div>
+ home:d=>{const U=allUsers(),O=allOrders(),rev=O.reduce((t,o)=>t+o.total,0),bn=Object.keys(d.banned).length+d.blacklist.length,stock=CATS.reduce((t,c)=>t+c.products.filter(p=>!p.sold).length,0);
+  return`<h3>Dashboard</h3><p class="lead">Welcome back, ${esc(me().username)}.</p>
+  <div class="sg">${sc(U.length,"Accounts")}${sc(O.length,"Orders (this device)")}${sc(money(rev),"Revenue (this device)")}${sc(stock,"Products for sale")}${sc(bn,"Banned / blacklisted")}${sc(CL()?"Connected":"Local only","Shared storage")}</div>
+  ${CL()?"":`<div class="warn"><b>Search only finds accounts made in this browser.</b> Connect shared storage so everyone's accounts, bans, badges and product changes are shared. <button class="gb" data-t="site">Set it up</button></div>`}
+  <h4>Quick actions</h4><div class="ab"><button class="gb" data-t="users">Manage users</button><button class="gb" data-t="prod">Edit products</button><button class="gb" data-t="badges">Give a badge</button><button class="gb" data-t="mod">Ban someone</button></div>
+  <div class="two"><div><h4>Newest accounts</h4>${U.slice().sort((a,b)=>b.created-a.created).slice(0,5).map(rrow).join("")||'<p class="nt">None yet.</p>'}</div>
+  <div><h4>Latest orders</h4>${O.slice(0,5).map(o=>`<div class="ar2"><span><b>${esc(o.name)}</b> <small>${esc(o.user)}</small></span><b>${money(o.total)}</b></div>`).join("")||'<p class="nt">None yet.</p>'}</div></div>`},
+ users:d=>`<h3>Users</h3><p class="lead">Click a user to manage them.</p><div class="tb"><input class="ai" id="aq" placeholder="Search username or email" value="${esc(aq)}"></div>
+  <div class="chips">${["all","verified","unverified","banned","admins","buyers"].map(f=>`<button class="gb ${f===afl?"on":""}" data-f="${f}">${f}</button>`).join("")}</div><div id="ul">${ulist()}</div>`,
+ orders:d=>`<h3>Orders</h3><p class="lead">Orders are saved in the buyer's own browser, so only purchases made on this device show here.</p><div class="tb"><input class="ai" id="oq" placeholder="Search by user or product" value="${esc(aoq)}"></div><div id="ol">${olist()}</div>`,
+ prod:d=>`<h3>Products</h3><p class="lead">Change prices or mark items sold. Changes show instantly${CL()?" for everyone":" on this device (connect shared storage to share them)"}.</p>`+
+  CATS.map(c=>`<h4>${esc(c.name)}</h4>`+(c.products.map(p=>{const key=esc(c.id+":"+p.name);return`<div class="ar2"><span><b>${esc(p.full)}</b> <span class="tg ${p.sold?"bad":""}">${p.sold?"sold":"for sale"}</span><br><small>Base price ${money(p.price0)}</small></span>
+   <span class="ab"><input class="ai pi" type="number" min="0" step="0.5" value="${p.price}" data-pp="${key}"><button class="gb" data-a="psold" data-k="${key}">${p.sold?"Mark for sale":"Mark sold"}</button></span></div>`}).join("")||'<p class="nt">No products.</p>')).join(""),
+ badges:d=>`<h3>Badges</h3><p class="lead">Give or remove badges by username. It works even before they sign up.</p>
+  <div class="row"><input class="ai" id="bu" placeholder="Username"><select class="ai" id="bs">${bOpts()}</select></div>
   <div class="row"><button class="go" data-a="bgadd">Add badge</button><button class="gb" data-a="bgrm">Remove badge</button></div>
-  <h4>Create a new badge</h4><div class="row"><input class="ai" id="nbn" placeholder="Name"><input class="ai" id="nbg" placeholder="Symbol e.g. ♦" maxlength="3"><input class="ai" id="nbc" type="color" value="#9aa2ff" style="padding:4px;height:49px"></div><button class="gb" data-a="nb">Create badge</button>
-  <h4>Admin-assigned badges</h4>${Object.entries(d.badges).filter(([,v])=>v.length).map(([u,v])=>`<div class="ar2"><b>${esc(u)}</b><div class="ab">${v.map(b=>`<button class="gb" data-a="bgx" data-k="${esc(u)}" data-b="${esc(b)}">${esc(b)} ✕</button>`).join("")}</div></div>`).join("")||'<p class="nt">None yet.</p>'}`,
- bans:d=>`<h4>Ban or blacklist</h4><input class="ai" id="bt" placeholder="Username or email"><input class="ai" id="br" placeholder="Reason (shown to the user)">
-  <div class="row"><button class="go" data-a="banT">Ban</button><button class="gb" data-a="blT">Blacklist (blocks sign-up too)</button></div>
+  <h4>Create a badge</h4><div class="row"><input class="ai" id="nbn" placeholder="Name"><input class="ai" id="nbg" placeholder="Symbol e.g. ♦" maxlength="3"><input class="ai" id="nbc" type="color" value="#9aa2ff" style="padding:4px;height:49px"></div><button class="gb" data-a="nb">Create badge</button>
+  <h4>Custom badges</h4>${Object.entries(d.defs).map(([n,v])=>`<div class="ar2"><span>${pill(n,0)}</span><button class="gb dg" data-a="nbdel" data-k="${esc(n)}">Delete</button></div>`).join("")||'<p class="nt">None yet.</p>'}
+  <h4>Assigned by admins</h4>${Object.entries(d.badges).filter(([,v])=>v.length).map(([u,v])=>`<div class="ar2"><b>${esc(u)}</b><div class="ab">${v.map(b=>`<button class="gb" data-a="bgx" data-k="${esc(u)}" data-b="${esc(b)}">${esc(b)} ✕</button>`).join("")}</div></div>`).join("")||'<p class="nt">None yet.</p>'}`,
+ mod:d=>`<h3>Moderation</h3><p class="lead">Ban keeps an account but blocks login. Blacklist also blocks new sign-ups.</p>
+  <input class="ai" id="bt" placeholder="Username or email"><input class="ai" id="br" placeholder="Reason (shown to the user)">
+  <div class="row"><button class="go" data-a="banT">Ban</button><button class="gb" data-a="blT">Blacklist</button></div>
+  ${sw("ns",d.noSignup,"Close new sign-ups")}
   <h4>Banned</h4>${Object.entries(d.banned).map(([k,v])=>`<div class="ar2"><span><b>${esc(k)}</b><br><small>${esc(v.reason||"no reason")}</small></span><button class="gb" data-a="unb" data-k="${esc(k)}">Unban</button></div>`).join("")||'<p class="nt">Nobody.</p>'}
   <h4>Blacklisted</h4>${d.blacklist.map(k=>`<div class="ar2"><b>${esc(k)}</b><button class="gb" data-a="unbl" data-k="${esc(k)}">Remove</button></div>`).join("")||'<p class="nt">Nobody.</p>'}`,
- admins:d=>`<h4>Admin emails</h4><p class="nt">Permanent ones live in CONFIG.admins at the top of the script. Ones added here are stored in this browser.</p>
+ site:d=>`<h3>Site</h3><p class="lead">Banner, admins, shared storage and data.</p>
+  <h4>Announcement banner</h4><input class="ai" id="an" placeholder="Leave empty for none" value="${esc(d.announce)}"><button class="gb" data-a="ann">Save banner</button>
+  <h4>Admins</h4><p class="nt">Permanent ones live in CONFIG.admins. Ones added here are saved in settings.</p>
   ${CONFIG.admins.map(a=>`<div class="ar2"><b>${esc(a)}</b><small>permanent</small></div>`).join("")}${d.admins.map(a=>`<div class="ar2"><b>${esc(a)}</b><button class="gb" data-a="admx" data-k="${esc(a)}">Remove</button></div>`).join("")}
-  <div class="row"><input class="ai" id="ae" type="email" placeholder="new admin email"><button class="go" data-a="admadd" style="margin:6px 0">Add admin</button></div>`,
- tools:d=>`<h4>Site announcement banner</h4><input class="ai" id="an" placeholder="Leave empty for none" value="${esc(d.announce)}"><button class="gb" data-a="ann">Save banner</button>
-  <label class="sw"><input type="checkbox" id="ns" ${d.noSignup?"checked":""}><i></i><span>Close new sign-ups</span></label>
-  <h4>Data</h4><div class="ab2 row"><button class="gb" data-a="exp">Export JSON</button><button class="gb" data-a="imp">Import JSON</button><button class="gb" data-a="purge">Purge unverified</button></div><input type="file" id="af" accept=".json" class="hide">
-  <p class="nt">${users().length} accounts · ${users().filter(u=>u.verified).length} verified · ${users().reduce((t,u)=>t+(u.orders||[]).length,0)} orders</p>`
+  <div class="row"><input class="ai" id="ae" type="email" placeholder="new admin email"><button class="go" data-a="admadd" style="margin:6px 0">Add admin</button></div>
+  <h4>Shared storage ${CL()?'<span class="tg ok">connected</span>':'<span class="tg bad">not connected</span>'}</h4>
+  <p class="nt">${CL()?`${DIR.length} accounts in the shared directory. Search, bans, badges, banner and product changes are shared with everyone.`:"Without this, accounts, bans and badges only exist in each person's own browser, which is why search can't find other people's accounts."}</p>
+  ${CL()?`<div class="ab"><button class="gb" data-a="csync">Upload this device's accounts</button><button class="gb" data-a="cpull">Refresh from cloud</button></div>`:""}
+  <details><summary>How to set it up (5 minutes, free)</summary><ol class="nt"><li>Create a free project at supabase.com.</li><li>Open <b>SQL Editor</b>, paste the code below and run it.</li><li>Open <b>Project Settings → API</b>. Copy the Project URL and the <b>anon public</b> key.</li><li>Paste them into <code>cloud:{url:"",key:""}</code> at the top of the script and re-upload the site.</li></ol>
+  <pre class="addr">${esc(SQL)}</pre><button class="gb" data-a="copysql">Copy SQL</button>
+  <p class="nt">Heads up: the anon key is visible in the page source and these policies are open, so a technical visitor could edit the directory or settings. It's fine for a small store, but not secure against someone determined.</p></details>
+  <h4>Data</h4><div class="ab"><button class="gb" data-a="exp">Export JSON</button><button class="gb" data-a="imp">Import JSON</button><button class="gb" data-a="purge">Purge unverified</button><button class="gb dg" data-a="reset">Reset admin settings</button></div><input type="file" id="af" accept=".json" class="hide">
+  <p class="nt">${users().length} local accounts · ${users().filter(u=>u.verified).length} verified · ${allOrders().length} orders</p>`,
+ log:d=>`<h3>Activity</h3><p class="lead">Recent admin actions.</p>${(d.log||[]).map(x=>`<div class="ar2"><span>${esc(x.m)}<br><small>${esc(x.by)} · ${ago(x.t)}</small></span></div>`).join("")||'<p class="nt">Nothing yet.</p>'}${(d.log||[]).length?'<button class="gb dg" data-a="clog">Clear log</button>':""}`
 };
-function admDraw(){const d=adm(),m=$("#am");
-  m.innerHTML=`<button class="x" id="ax">×</button><h3>Admin panel</h3><div class="atabs">${Object.keys(AT).map(t=>`<button class="gb ${t===atab?"on":""}" data-t="${t}">${t}</button>`).join("")}</div>${AT[atab](d)}`;
+function admDraw(){
+  const d=adm(),m=$("#am"),keep=m.querySelector(".ac")?.scrollTop||0;
+  m.innerHTML=`<button class="x" id="ax" aria-label="Close">×</button><div class="adm"><nav class="as"><div class="at">Admin</div>${TABS.map(([t,n,g])=>`<button data-t="${t}" class="${t===atab?"on":""}"><i>${g}</i>${n}</button>`).join("")}</nav><div class="ac">${AT[atab](d)}</div></div>`;
+  m.querySelector(".ac").scrollTop=keep;
   $("#ax").onclick=()=>$("#aov").classList.remove("open");
-  m.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>{atab=b.dataset.t;admDraw()});
-  const q=$("#aq");if(q)q.oninput=()=>{aq=low(q.value.trim());$("#ul").innerHTML=ulist()};
-  const ns=$("#ns");if(ns)ns.onchange=()=>{const d=adm();d.noSignup=ns.checked;admSave(d);toast(ns.checked?"Sign-ups closed":"Sign-ups open")};
+  m.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>{atab=b.dataset.t;admDraw();m.querySelector(".ac").scrollTop=0});
+  const q=$("#aq");if(q)q.oninput=()=>{aq=q.value.trim();$("#ul").innerHTML=ulist()};
+  const o=$("#oq");if(o)o.oninput=()=>{aoq=o.value.trim();$("#ol").innerHTML=olist()};
+  const ns=$("#ns");if(ns)ns.onchange=()=>{const d=adm();d.noSignup=ns.checked;logA(d,ns.checked?"Closed sign-ups":"Opened sign-ups");admSave(d);toast(ns.checked?"Sign-ups closed":"Sign-ups open")};
   const af=$("#af");if(af)af.onchange=()=>{const f=af.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const j=JSON.parse(r.result);if(j.users)saveUsers(j.users);if(j.admin)admSave(j.admin);toast("Imported");location.reload()}catch(e){toast("Invalid file")}};r.readAsText(f)};
 }
+$("#am").addEventListener("change",e=>{
+  const i=e.target.closest("[data-pp]");if(!i)return;const d=adm(),key=i.dataset.pp,p=findProd(key);if(!p)return;
+  const val=Math.max(0,+i.value||0),o=(d.prod[key]=d.prod[key]||{});
+  if(val===p.price0)delete o.price;else o.price=val;if(!Object.keys(o).length)delete d.prod[key];
+  logA(d,"Price of "+p.full+" set to "+money(val));admSave(d);applyProd(d);render();toast("Price saved");admDraw()});
 $("#am").addEventListener("click",e=>{
-  const b=e.target.closest("[data-a]");if(!b)return;const a=b.dataset.a,k=b.dataset.k,d=adm(),v=id=>($("#"+id)?.value||"").trim();
-  const U=n=>users().find(u=>low(u.username)===low(n));
-  const done=m=>{admSave(d);if(m)toast(m);admDraw();header()};
+  const f=e.target.closest("[data-f]");if(f){afl=f.dataset.f;return admDraw()}
+  const b=e.target.closest("[data-a]");if(!b)return;
+  const a=b.dataset.a,k=b.dataset.k,d=adm(),v=id=>($("#"+id)?.value||"").trim();
+  const U=n=>allUsers().find(u=>low(u.username)===low(n)),Lc=n=>users().find(u=>low(u.username)===low(n));
+  const self=n=>me()&&low(me().username)===low(n);
+  const done=m=>{if(m){logA(d,m);toast(m)}admSave(d);admDraw();header()};
+  if(a==="ex"){aex=aex===low(k)?"":low(k);return $("#ul").innerHTML=ulist()}
+  if(a==="goto"){atab="users";aq=k;afl="all";aex=low(k);return admDraw()}
+  if(a==="view"){$("#aov").classList.remove("open");return openUser(k)}
   if(a==="ren"){const n=(prompt("New username for "+k+":")||"").trim();if(!n)return;
     if(!/^[A-Za-z0-9_.]{3,16}$/.test(n))return toast("3–16 chars: letters, numbers, _ or .");
     const all=users();if(all.some(x=>x.username!==k&&low(x.username)===low(n)))return toast("Username taken");
-    all.find(x=>x.username===k).username=n;saveUsers(all);
+    const x=all.find(x=>x.username===k);x.username=n;saveUsers(all);cDel(k);pushProfile(x);
     if(d.badges[low(k)]){d.badges[low(n)]=d.badges[low(k)];delete d.badges[low(k)]}
-    if(localStorage.getItem("cle_session")===k)localStorage.setItem("cle_session",n);return done("Renamed to "+n)}
-  if(a==="ban"){if(isAdmin(U(k)))return toast("Can't ban an admin");const r=prompt("Reason (optional):");if(r===null)return;d.banned[low(k)]={reason:r,date:Date.now()};return done(k+" banned")}
-  if(a==="unban"||a==="unb"){delete d.banned[low(k)];const u=U(k);if(u)delete d.banned[low(u.email)];return done("Unbanned")}
-  if(a==="clr"){if(!confirm("Wipe all orders for "+k+"?"))return;const all=users();all.find(x=>x.username===k).orders=[];saveUsers(all);return done("Orders wiped")}
-  if(a==="del"){if(!confirm("Delete account "+k+" permanently?"))return;saveUsers(users().filter(x=>x.username!==k));return done("Deleted")}
+    if(localStorage.getItem("cle_session")===k)localStorage.setItem("cle_session",n);aex=low(n);return done("Renamed "+k+" to "+n)}
+  if(a==="ban"){if(self(k))return toast("You can't ban yourself");if(isAdmin(U(k)))return toast("Can't ban an admin");const r=prompt("Reason (optional):");if(r===null)return;d.banned[low(k)]={reason:r,date:Date.now()};return done("Banned "+k)}
+  if(a==="unban"||a==="unb"){delete d.banned[low(k)];const u=U(k);if(u&&u.email)delete d.banned[low(u.email)];return done("Unbanned "+k)}
+  if(a==="ver"||a==="unver"){const all=users(),x=all.find(y=>y.username===k);x.verified=a==="ver";saveUsers(all);if(x.verified)pushProfile(x);return done((x.verified?"Verified ":"Unverified ")+k)}
+  if(a==="adm"){const u=Lc(k),em=low(u.email);if(CONFIG.admins.some(x=>low(x)===em))return toast("Permanent admin (set in CONFIG)");
+    d.admins=d.admins.includes(em)?d.admins.filter(x=>x!==em):d.admins.concat(em);return done((d.admins.includes(em)?"Made ":"Removed admin from ")+k+(d.admins.includes(em)?" an admin":""))}
+  if(a==="ubadd"){const s=new Set(d.badges[low(k)]||[]);s.add($("#ub").value);d.badges[low(k)]=[...s];return done("Gave "+$("#ub").value+" badge to "+k)}
+  if(a==="clr"){if(!confirm("Wipe all orders for "+k+"?"))return;const all=users();all.find(x=>x.username===k).orders=[];saveUsers(all);return done("Wiped orders for "+k)}
+  if(a==="del"){if(self(k))return toast("You can't delete yourself");if(!confirm("Delete "+k+" permanently?"))return;saveUsers(users().filter(x=>x.username!==k));cDel(k);DIR=DIR.filter(x=>low(x.username)!==low(k));aex="";return done("Deleted "+k)}
+  if(a==="odel"){if(!confirm("Remove this order?"))return;const all=users(),x=all.find(y=>y.username===k);x.orders=(x.orders||[]).filter(o=>String(o.date)!==b.dataset.i);saveUsers(all);return done("Removed an order from "+k)}
+  if(a==="psold"){const p=findProd(k),o=(d.prod[k]=d.prod[k]||{}),ns=!p.sold;if(ns===p.sold0)delete o.sold;else o.sold=ns;if(!Object.keys(o).length)delete d.prod[k];applyProd(d);render();return done(p.full+(ns?" marked sold":" marked for sale"))}
   if(a==="bgadd"||a==="bgrm"){const n=low(v("bu")),bd=$("#bs").value;if(!n)return toast("Type a username");
-    const s=new Set(d.badges[n]||[]);a==="bgadd"?s.add(bd):s.delete(bd);d.badges[n]=[...s];return done(a==="bgadd"?"Badge added":"Badge removed")}
-  if(a==="bgx"){d.badges[k]=(d.badges[k]||[]).filter(x=>x!==b.dataset.b);return done("Removed")}
+    const s=new Set(d.badges[n]||[]);a==="bgadd"?s.add(bd):s.delete(bd);d.badges[n]=[...s];return done((a==="bgadd"?"Gave ":"Removed ")+bd+(a==="bgadd"?" badge to ":" badge from ")+n)}
+  if(a==="bgx"){d.badges[k]=(d.badges[k]||[]).filter(x=>x!==b.dataset.b);return done("Removed "+b.dataset.b+" from "+k)}
   if(a==="nb"){const n=v("nbn").replace(/\s/g,"");if(!n||!v("nbg"))return toast("Name and symbol needed");
-    d.defs[n]={g:v("nbg"),c:$("#nbc").value,d:n};BADGE_DEFS[n]=d.defs[n];return done("Badge created")}
+    d.defs[n]={g:v("nbg"),c:$("#nbc").value,d:n};BADGE_DEFS[n]=d.defs[n];return done("Created badge "+n)}
+  if(a==="nbdel"){delete d.defs[k];delete BADGE_DEFS[k];Object.keys(d.badges).forEach(u=>d.badges[u]=d.badges[u].filter(x=>x!==k));return done("Deleted badge "+k)}
   if(a==="banT"||a==="blT"){const t=low(v("bt"));if(!t)return toast("Enter a username or email");
     if(CONFIG.admins.some(x=>low(x)===t))return toast("Can't target an admin");
-    if(a==="banT")d.banned[t]={reason:v("br"),date:Date.now()};else if(!d.blacklist.includes(t))d.blacklist.push(t);return done("Done")}
-  if(a==="unbl"){d.blacklist=d.blacklist.filter(x=>x!==k);return done("Removed")}
-  if(a==="admadd"){const m=low(v("ae"));if(!/^\S+@\S+\.\S+$/.test(m))return toast("Invalid email");if(!d.admins.includes(m))d.admins.push(m);return done("Admin added")}
-  if(a==="admx"){d.admins=d.admins.filter(x=>x!==k);return done("Removed")}
+    if(a==="banT")d.banned[t]={reason:v("br"),date:Date.now()};else if(!d.blacklist.includes(t))d.blacklist.push(t);return done((a==="banT"?"Banned ":"Blacklisted ")+t)}
+  if(a==="unbl"){d.blacklist=d.blacklist.filter(x=>x!==k);return done("Removed "+k+" from blacklist")}
+  if(a==="admadd"){const m=low(v("ae"));if(!/^\S+@\S+\.\S+$/.test(m))return toast("Invalid email");if(!d.admins.includes(m))d.admins.push(m);return done("Added admin "+m)}
+  if(a==="admx"){d.admins=d.admins.filter(x=>x!==k);return done("Removed admin "+k)}
   if(a==="ann"){d.announce=v("an");return done("Banner saved")}
-  if(a==="exp"){const l=document.createElement("a");l.href=URL.createObjectURL(new Blob([JSON.stringify({users:users(),admin:adm()},null,1)],{type:"application/json"}));l.download="cle-backup.json";l.click();return}
+  if(a==="csync"){(async()=>{for(const u of users().filter(x=>x.verified))await pushProfile(u);await loadDir();done("Uploaded accounts to cloud")})();return}
+  if(a==="cpull"){(async()=>{await pullSettings();await loadDir();admDraw();header();toast("Refreshed")})();return}
+  if(a==="copysql"){navigator.clipboard.writeText(SQL).then(()=>toast("SQL copied"),()=>toast("Select and copy it manually"));return}
+  if(a==="exp"){const l=document.createElement("a");l.href=URL.createObjectURL(new Blob([JSON.stringify({users:users(),admin:adm()},null,1)],{type:"application/json"}));l.download="backup.json";l.click();return}
   if(a==="imp")return $("#af").click();
-  if(a==="purge"){if(!confirm("Delete all unverified accounts?"))return;saveUsers(users().filter(x=>x.verified));return done("Purged")}
+  if(a==="purge"){if(!confirm("Delete all unverified accounts?"))return;saveUsers(users().filter(x=>x.verified));return done("Purged unverified accounts")}
+  if(a==="reset"){if(!confirm("Reset bans, badges, banner and product changes?"))return;Object.assign(d,adm0());applyProd(d);render();return done("Reset admin settings")}
+  if(a==="clog"){d.log=[];return done()}
 });
+
+applyProd();
 
 gate();
 </script>
